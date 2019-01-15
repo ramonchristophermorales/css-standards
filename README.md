@@ -1,8 +1,23 @@
+
 # css-standards
 Coding standards and guide for developing apps using CSS
 
+### Table of contents
+ - [ Terminology](#terminology)
+ - [ Write valid CSS](#write-valid-css)
+ - [Line endings](#line-endings)
+ - [Encoding of CSS files](#encoding-of-css-files)
+ - [Naming Conventions](#naming-conventions)
+ - [Values](#values)
+ - [Selectors](#selectors)
+ - [Multiple selectors](#multiple-selectors)
+ - [Properties](#properties)
+ - [Shorthand properties](#shorthand-properties)
+ - [Order of properties](#order-of-properties)
+ - [Properties with multiple values](#properties-with-multiple-values)
+ - [Comments](#comments)
 
-
+<a id="terminology"></a>
 # Terminology
 
 Concise terminology used in these standards:
@@ -14,7 +29,7 @@ Concise terminology used in these standards:
 property: value makes a  _declaration_. Selector and declarations makes a  _rule_.
 
   
-
+<a id="write-valid-css"></a>
 # Write valid CSS
 
 All CSS code must be valid CSS3.
@@ -22,19 +37,19 @@ All CSS code must be valid CSS3.
 When using vendor prefixed properties, you can ignore CSS validation errors it generates.
 
   
-
+<a id="line-endings"></a>
 # Line endings
 
 Files should be formatted with \n as the line ending (Unix line endings), not \r\n (Windows line endings) or \r (Apple OS's).
 
   
-
+<a id="encoding-of-css-files"></a>
 # Encoding of CSS files
 
 Encoding of CSS files should be set to UTF-8.
 
   
-
+<a id="naming-conventions"></a>
 # Naming Conventions
 
 Always use hyphens in class names. Do not use underscores or CamelCase notation.
@@ -47,7 +62,7 @@ Always use hyphens in class names. Do not use underscores or CamelCase notation.
     .SecNav
 
   
-
+<a id="values"></a>
 # Values
 
 Always define generic font families like sans-serif or serif.
@@ -77,7 +92,7 @@ If you use 0 as a value, do not add a unit (px, em, etc.) after it.
 Do not use default values if they are not necessary to override inherited values.
 
   
-
+<a id="selectors"></a>
 # Selectors
 
 Selectors should be on a single line, with a space after the selector, followed by an opening brace. A selector should end with a closing brace on the next line. Next selector related the the previous one should be on the next line with one additional line space between them.
@@ -97,7 +112,7 @@ Avoid very complex child and descendant selectors like:
     }
 
   
-
+<a id="multiple-selectors"></a>
 # Multiple selectors
 
 Multiple selectors should each be on a single line, with no space after each comma.
@@ -107,7 +122,7 @@ Multiple selectors should each be on a single line, with no space after each com
     }
 
   
-
+<a id="properties"></a>
 # Properties
 
 Every declaration should be on its own line below the opening brace. Each property should:
@@ -126,25 +141,27 @@ Every declaration should be on its own line below the opening brace. Each proper
   
 
   
-
+<a id="shorthand-properties"></a>
 # Shorthand properties
 
 Use shorthand properties when possible.
 
   
-
+<a id="order-of-properties"></a>
 # Order of properties
 
 Order of properties can have the following structure: box model, typography and graphic layer or order properties alphabetically.
 
   
-
+<a id="properties-with-multiple-values"></a>
 # Properties with multiple values
 
 When properties can have multiple values, each value should be separated with a space.
 
 font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, lucida, sans-serif;
 
+
+<a id="comments"></a>
 # Comments
 
 Follow the comments style used in normalize.css. The comments blocks should be maximum of 80 characters wide.
